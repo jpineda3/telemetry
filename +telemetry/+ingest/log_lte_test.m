@@ -33,6 +33,5 @@ function log_lte_test(results, date, server, test)
         tel.log_lte_evm_test(device_name, tx_attn, rx_gain_control_mode, lo_freq, ...
             tmn, bw, evm_pbch, evm_pcfich, evm_phich, evm_pdcch, evm_rs, ...
             evm_sss, evm_pss, evm_pdsch, date);
-        disp(tel.__file__)
         disp(properties(tel))
     end
