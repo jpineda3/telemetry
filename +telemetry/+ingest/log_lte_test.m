@@ -12,7 +12,6 @@ function log_lte_test(results, date, server, test)
     end
 
     tel = py.telemetry.ingest(pyargs("server",server)); disp(properties(tel));
-    disp(tel.__file__)
     % tel.use_test_index = test;
     for i = 1:numel(results)
         device_name = results(i).Details.DeviceName;
