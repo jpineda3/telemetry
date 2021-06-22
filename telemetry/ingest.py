@@ -10,7 +10,7 @@ class ingest:
     def __init__(self, mode="elastic", server="alpine"):
         if mode == "elastic":
             self.db = telemetry.elastic(server=server)
-        vars(ingest)
+
     def _get_schema(self, name):
         loc = os.path.dirname(__file__)
         return os.path.join(loc, "resources", name)
