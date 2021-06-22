@@ -6,7 +6,7 @@ import csv
 
 class ingest:
     use_test_index = False
-
+    # check if this is same file as __file__
     def __init__(self, mode="elastic", server="alpine"):
         if mode == "elastic":
             self.db = telemetry.elastic(server=server)
