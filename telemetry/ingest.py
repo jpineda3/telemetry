@@ -13,6 +13,7 @@ class ingest:
 
     def _get_schema(self, name):
         loc = os.path.dirname(__file__)
+        print(__file__)
         return os.path.join(loc, "resources", name)
 
     def _translate_hdl_resource_fields(self, fieldss):
